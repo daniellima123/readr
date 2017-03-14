@@ -6,6 +6,7 @@
 \alias{fwf_widths}
 \alias{fwf_positions}
 \alias{fwf_cols}
+\alias{read_overlap}
 \title{Read a fixed width file into a tibble}
 \usage{
 read_fwf(file, col_positions, col_types = NULL, locale = default_locale(),
@@ -19,6 +20,10 @@ fwf_widths(widths, col_names = NULL)
 fwf_positions(start, end = NULL, col_names = NULL)
 
 fwf_cols(...)
+
+read_overlap(file, col_positions, col_types = NULL,
+  locale = default_locale(), na = c("", "NA"), comment = "", skip = 0,
+  n_max = Inf, guess_max = min(n_max, 1000), progress = show_progress())
 }
 \arguments{
 \item{file}{Either a path to a file, a connection, or literal data
